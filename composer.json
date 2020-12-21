@@ -1,0 +1,30 @@
+{
+  "name": "letist/yii2-i18n",
+  "description": "Auto generation of language files for Yii 2 framework",
+  "keywords": [
+    "yii2",
+    "language",
+    "i18n"
+  ],
+  "homepage": "https://github.com/Letist/yii2-i18n.git",
+  "type": "yii2-extension",
+  "authors": [
+    {
+      "name": "Yaroslav Goisa",
+      "email": "yarisrespect@gmail.com"
+    },
+    {
+      "name": "Artem Khlopetskyi",
+      "email": "art.khlopetskyi@gmail.com"
+    }
+    
+  ],
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "letist\\i18n\\": ""
+    }
+  }
+}
