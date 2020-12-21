@@ -1,6 +1,6 @@
 <?php
 
-namespace Letist\i18n;
+namespace letist\i18n;
 
 use Yii;
 use yii\i18n\PhpMessageSource;
@@ -51,13 +51,13 @@ class I18N extends \yii\i18n\I18N {
 
             if( ! is_dir($baseDir) ) {
                 if(!mkdir($baseDir, 0777)) {
-                    Yii::getLogger()->log("yarisrespect/i18n, can`t create base directory {$basePath}!", Logger::LEVEL_WARNING);
+                    Yii::getLogger()->log("letist/i18n, can`t create base directory {$basePath}!", Logger::LEVEL_WARNING);
                     return;
                 }
             }
             if( ! is_dir($langDir) ) {
                 if(!mkdir($langDir, 0777)) {
-                    Yii::getLogger()->log("yarisrespect/i18n, can`t create language directory {$basePath}/{$language}!", Logger::LEVEL_WARNING);
+                    Yii::getLogger()->log("letist/i18n, can`t create language directory {$basePath}/{$language}!", Logger::LEVEL_WARNING);
                     return;
                 }
             }
@@ -82,7 +82,7 @@ class I18N extends \yii\i18n\I18N {
                 $translations[$size] = '];';
                 file_put_contents( $fileSrc, $translations );
             } else {
-                Yii::getLogger()->log("Letist/i18n, file {$file} - damaged!", Logger::LEVEL_WARNING);
+                Yii::getLogger()->log("letist/i18n, file {$file} - damaged!", Logger::LEVEL_WARNING);
             }
         }
     }
